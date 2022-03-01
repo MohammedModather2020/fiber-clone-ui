@@ -44,7 +44,7 @@ body{
 /**  2.0- Navbar Desktop */
 .navbar-desktop{
   background-color: var(--colorBackground);
-  padding-block: .3rem;
+  padding-block: .5rem;
 }
 .navbar-desktop .brand{
   text-decoration: none;
@@ -71,6 +71,9 @@ body{
 .main-section{
   background-color: var(--colorBackground);
   min-height: 100vh;
+}
+.main-section .container{
+  height: 100vh;
 }
 .main-section .text .review{
   font-size: .8rem;
@@ -105,7 +108,6 @@ body{
 .main-section .text .features-free-trial small i{
   color: #34BE82;
 }
-
 
 /* * 3- Common Style */
 /**   3.0- Button Primary */
