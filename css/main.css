@@ -108,9 +108,25 @@ body{
 .main-section .text .features-free-trial small i{
   color: #34BE82;
 }
-
-/* * 3- Common Style */
-/**   3.0- Button Primary */
+/** 2.3- Features */
+.features .title{
+  width: 45%;
+}
+.features .sub-title{
+  color: var(--colorPrimary);
+}
+.features .featured .name{
+  font-size: .9rem;
+  margin-top: .9rem;
+  margin-bottom: .2rem;
+  font-weight: bolder;
+}
+.features .featured .desc{
+  font-size: .8rem;
+  line-height: 1.7;
+}
+/** 3- Common Style */
+/**  3.0- Button Primary */
 .b-primary{
   color: #FFF !important;
   background-color: var(--colorPrimary);
