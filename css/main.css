@@ -14,9 +14,9 @@
    1.1- Root Element
    1.2- Body Element
 * 2- Section Style
-   2.0- 
+   2.0- NavBar Desktop
 * 3- Common Style
-   3.0- 
+   3.0- Button Primary
 */
 /* 
 /** 1- Genral Style */
@@ -28,12 +28,56 @@
 }
 /** 1.1- Root Element */
 :root{
+  --colorPrimary:#4D13D1;
+  --colorSecondary: #000000;
+  --colorBackground: #FBF8F3;
   scroll-behavior: smooth;
   overflow-x: hidden !important;
 }
 /** 1.2- Body Element */
 body{
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden !important;
 }
 /** 2- Section Style */
-/**  2.0-  */
+/**  2.0- Navbar Desktop */
+.navbar-desktop{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--colorBackground);
+  padding-block: .3rem;
+}
+.navbar-desktop .brand{
+  text-decoration: none;
+  color: var(--colorSecondary);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.navbar-desktop .links li a{
+  color: var(--colorSecondary);
+  font-size: .95rem;
+  text-decoration: none;
+}
+.navbar-desktop .links li.active a{
+  color: var(--colorPrimary);
+}
+.navbar-desktop .auth a{
+  color: var(--colorSecondary);
+  text-decoration: none;
+}
+.navbar-desktop .auth a:first-of-type{
+  font-weight: bold;
+}
+/* * 3- Common Style */
+/**   3.0- Button Primary */
+.b-primary{
+  color: #FFF !important;
+  background-color: var(--colorPrimary);
+  display: inline-block;
+  padding: .5rem 1rem;
+  font-size: .85rem;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+}
