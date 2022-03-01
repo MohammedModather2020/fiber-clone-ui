@@ -15,6 +15,7 @@
    1.2- Body Element
 * 2- Section Style
    2.0- NavBar Desktop
+   2.1- Main Section
 * 3- Common Style
    3.0- Button Primary
 */
@@ -42,7 +43,6 @@ body{
 /** 2- Section Style */
 /**  2.0- Navbar Desktop */
 .navbar-desktop{
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: var(--colorBackground);
   padding-block: .3rem;
 }
@@ -67,13 +67,54 @@ body{
 .navbar-desktop .auth a:first-of-type{
   font-weight: bold;
 }
+/** 2.1- Main Section */
+.main-section{
+  background-color: var(--colorBackground);
+  min-height: 100vh;
+}
+.main-section .text .review{
+  font-size: .8rem;
+}
+.main-section .text .review i{
+  color: orange;
+}
+.main-section .text .title{
+  margin-block: .5rem;
+  font-size: 3.1rem;
+  font-weight: bolder;
+}
+.main-section .text .desc{
+  font-size: .8rem;
+  width: 75%;
+  line-height: 1.7;
+  color: #777;
+}
+.main-section .text .btns a{
+  color: var(--colorPrimary);
+  font-size: .9rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.main-section .text .btns a:last-of-type{
+  font-size: .95rem;
+}
+.main-section .text .features-free-trial small {
+  font-size: .8rem;
+  color: #888;
+}
+.main-section .text .features-free-trial small i{
+  color: #34BE82;
+}
+
+
 /* * 3- Common Style */
 /**   3.0- Button Primary */
 .b-primary{
   color: #FFF !important;
   background-color: var(--colorPrimary);
   display: inline-block;
-  padding: .5rem 1rem;
+  padding: .6rem 1rem;
+  font-family: inherit;
   font-size: .85rem;
   border-radius: .3rem;
   -webkit-border-radius: .3rem;
