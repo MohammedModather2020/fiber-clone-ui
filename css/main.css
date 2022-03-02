@@ -16,6 +16,8 @@
 * 2- Section Style
    2.0- NavBar Desktop
    2.1- Main Section
+   2.2- Features
+   2.3- Portfolio
 * 3- Common Style
    3.0- Button Primary
 */
@@ -108,7 +110,7 @@ body{
 .main-section .text .features-free-trial small i{
   color: #34BE82;
 }
-/** 2.3- Features */
+/** 2.2- Features */
 .features .title{
   width: 45%;
 }
@@ -124,6 +126,24 @@ body{
 .features .featured .desc{
   font-size: .8rem;
   line-height: 1.7;
+}
+/** 2.3- Portfolio */
+.portfolio .container{
+  background-color: var(--colorPrimary);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.portfolio .text .desc{
+  font-size: .85rem;
+  line-height: 1.7;
+  color: #f6f6f699;
+  width: 65%;
+}
+.portfolio .text a{
+  color: var(--colorPrimary) !important;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
