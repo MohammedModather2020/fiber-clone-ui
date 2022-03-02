@@ -18,6 +18,7 @@
    2.1- Main Section
    2.2- Features
    2.3- Portfolio
+   2.4- Community
 * 3- Common Style
    3.0- Button Primary
 */
@@ -144,6 +145,27 @@ body{
 }
 .portfolio .text a{
   color: var(--colorPrimary) !important;
+}
+/** 2.4- Community */
+.community .box .info .name{
+  font-size: .9rem;
+  font-weight: bold;
+}
+.community .box .info .flowered{
+  font-size: .8rem;
+  color: #999;
+}
+.community .box .desc{
+  font-size: .8rem;
+  line-height: 1.7;
+  color: #999;
+}
+.community .box .links{
+  color: var(--colorPrimary);
+  font-size: .9rem;
+}
+.community .swiper-pagination{
+  bottom: 10px;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
