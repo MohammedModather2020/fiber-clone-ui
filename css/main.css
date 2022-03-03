@@ -20,8 +20,12 @@
    2.3- Portfolio
    2.4- Community
    2.5- Footer
+   2.6- Sign Up
 * 3- Common Style
    3.0- Button Primary
+   3.1- Label
+   3.2- Input 
+   3.3- PlaceHolder
 */
 /* 
 /** 1- Genral Style */
@@ -187,6 +191,53 @@ body{
   text-decoration: none;
   color: #444;
 }
+/** 2.6- Sign Up */
+.signup{
+  min-height: 100vh;
+}
+.signup .container,
+.signup .row{
+  height: 100vh;
+}
+.signup .form{
+  padding-top: 3rem;
+  max-width: 75%;
+}
+.signup .form .form-group.remember{
+  width: 80%;
+}
+.signup .form .form-group.remember strong{
+  color: var(--colorPrimary);
+  padding-inline-start: 1.3rem;
+}
+.signup .form .have-account a{
+  color: var(--colorPrimary);
+}
+.signup .form .form-group .input-group .icon{
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  font-size: .8rem;
+  color: #bbb;
+}
+.signup .slider{
+  background-color: var(--colorPrimary);
+}
+.signup .slider .box .title{
+  color: #FFF;
+  font-size: 1.8rem;
+}
+.signup .slider .box .desc{
+  font-size: .8rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+.signup .slider .swiper-pagination-bullet-active {
+  background-color: #FFF !important;
+}
+.signup .slider .swiper-pagination-bullet{
+  background-color: rgba(255,255 ,255, .9);
+}
 /** 3- Common Style */
 /**  3.0- Button Primary */
 .b-primary{
@@ -201,4 +252,35 @@ body{
   -moz-border-radius: .3rem;
   -ms-border-radius: .3rem;
   -o-border-radius: .3rem;
+}
+/** 3.1- Label */
+.form-group label{
+  font-size: .8rem;
+  font-weight: 500;
+  margin-bottom: .3rem;
+  color: var(--colorSecondary);
+}
+/** 3.2- Input */
+.form-group{
+  margin-bottom: 1rem;
+}
+.form-group .form-control{
+  padding-block: .75rem;
+  border-color: rgba(0,0 ,0, .1);
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+}
+.form-group .form-control:focus,
+.form-group .form-check-input:focus{
+  box-shadow: unset;
+  outline: 0;
+  border-color: var(--colorPrimary);
+}
+/** 3.3- PlaceHolder */
+::placeholder{
+  font-size: .7rem;
+  color: #ccc;
 }
