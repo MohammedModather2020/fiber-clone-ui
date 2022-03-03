@@ -19,6 +19,7 @@
    2.2- Features
    2.3- Portfolio
    2.4- Community
+   2.5- Footer
 * 3- Common Style
    3.0- Button Primary
 */
@@ -166,6 +167,25 @@ body{
 }
 .community .swiper-pagination{
   bottom: 10px;
+}
+/** 2.5- Footer */
+.footer{
+  background-color: var(--colorBackground);
+}
+.footer .info .desc{
+  font-size: .85rem;
+  line-height: 1.7;
+  color: #666;
+}
+.footer .info .copyright{
+  font-size: .9rem;
+}
+.footer .links li a{
+  font-size: .92rem;
+  display: inline-block;
+  margin-bottom: .7rem;
+  text-decoration: none;
+  color: #444;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
