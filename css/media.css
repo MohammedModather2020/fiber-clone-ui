@@ -34,4 +34,19 @@
     display: block;
     width: 85%;
   }
+  .signup .container, .signup .row{
+    height: unset;
+  }
+  .signup .form{
+    max-width: 100%;
+  }
+  .signup .form .form-group.remember{
+    width: 100%;
+  }
+  .form-group label{
+    font-size: .72rem;
+  }
+  .signup .form .form-group .input-group .icon{
+    top: 20px;
+  }
 }
