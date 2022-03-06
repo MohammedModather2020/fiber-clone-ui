@@ -28,6 +28,7 @@
    3.3- PlaceHolder
    3.4- Scroll To Top
    3.5- Loading Overlay
+   3.6- Scroll Bar
 */
 /* 
 /** 1- Genral Style */
@@ -369,4 +370,29 @@ body{
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+/** 3.6- Scroll Bar */
+::-webkit-scrollbar {
+  background-color: var(--colorBackground);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorPrimary);
+  border-radius: 7px
+}
+::-moz-scrollbar {
+  background-color: var(--colorBackground);
+  width: 8px;
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--colorPrimary);
+  border-radius: 7px;
+}
+::-o-scrollbar {
+  background-color: var(--colorBackground);
+  width: 8px;
+}
+::-o-scrollbar-thumb {
+  background-color: var(--colorPrimary);
+  border-radius: 7px;
 }
