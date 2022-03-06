@@ -17,11 +17,24 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- Links File CSS -->
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/menu-mobile.css"/>
     <link rel="stylesheet" href="css/media.css"/>
   </head>
   <body>
+    <!--* Menu Mobile -->
+    <nav id="slide-menu" class="d-md-none">
+      <ul class="links list-unstyled">
+        <li><a href="index.html"><i class="fas fa-home fa-fw"></i> Home</a></li>
+        <li><a href="#community"><i class="fas fa-comment-dots fa-fw"></i> Community</a></li>
+        <li><a href="#pricing"><i class="fa fa-dollar-sign fa-fw"></i> Pricing</a></li>
+        <li><a href="#features"><i class="fas fa-rocket fa-fw"></i> Features</a></li>
+      </ul> <!-- ./links -->
+    </nav> <!-- #slide-menu -->
+    <div id="content" class="d-md-none">
+      <div class="menu-trigger"><i class="fas fa-bars fa-fw"></i></div>
+    </div> <!-- ./content -->
     <!--* NavBar Desktop -->
-    <header class="navbar-desktop fixed-top">
+    <header class="navbar-desktop fixed-top d-none d-md-block">
       <div class="container">
         <nav class="row align-items-center">
           <div class="col-md-3">
@@ -32,9 +45,9 @@
           <div class="col-md-5">
             <ul class="list-unstyled links d-flex gap-4 justify-content-center mb-0">
               <li class="active"><a href="">Home</a></li>
-              <li><a href="">Community</a></li>
-              <li><a href="">Pricing</a></li>
-              <li><a href="">Features</a></li>
+              <li><a href="#community">Community</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#features">Features</a></li>
             </ul> <!-- ./links -->
           </div>
           <div class="col-md-4">
@@ -72,7 +85,7 @@
               </div>
             </div> <!-- ./text -->
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-first order-md-0">
             <div class="image">
               <img class="w-100" src="assets/images/img-hero.png" alt="img-hero"/>
             </div> <!-- ./images -->
@@ -81,7 +94,7 @@
       </div> <!-- ./container -->
     </main> <!-- ./main-section -->
     <!--* Features -->
-    <div class="features py-5">
+    <div id="features" class="features py-5">
       <div class="container">
         <h2 class="sub-title h4 fs-6 fw-bold">Why Fiber ?</h2>
         <h3 class="title fs-2 fw-bold">A good portfolio means good employability</h3>
@@ -123,7 +136,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./features -->
     <!--* Portfolio -->
-    <div class="portfolio pb-5">
+    <div id="pricing" class="portfolio pb-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-center">
@@ -142,7 +155,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./portfolio -->
     <!--* Community -->
-    <div class="community py-3">
+    <div id="community" class="community py-3">
       <div class="container">
         <div class="swiper mySwiper pb-5">
           <div class="swiper-wrapper">
