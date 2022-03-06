@@ -21,4 +21,17 @@
     display: block;
     margin-bottom: 1rem;
   }
+  .features .title{
+    width: 100%;
+  }
+  .portfolio .text{
+    padding-top: 1rem;
+  }
+  .portfolio .text .desc{
+    width: 95%;
+  }
+  .portfolio .text a{
+    display: block;
+    width: 85%;
+  }
 }
