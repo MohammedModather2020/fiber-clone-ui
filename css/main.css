@@ -26,6 +26,7 @@
    3.1- Label
    3.2- Input 
    3.3- PlaceHolder
+   3.4- Scroll To Top
 */
 /* 
 /** 1- Genral Style */
@@ -283,4 +284,29 @@ body{
 ::placeholder{
   font-size: .7rem;
   color: #ccc;
+}
+/** 3.4- Scroll To Top */
+#scroll-top{
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background: var(--colorPrimary);
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#scroll-top i{
+  line-height: 40px;
+}
+#scroll-top:hover{
+  background: var(--colorPrimary);
 }
