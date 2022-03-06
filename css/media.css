@@ -1,0 +1,24 @@
+@media screen and (max-width:767px) {
+  .main-section .text .review {
+    text-align: center;
+    display: block;
+  }
+  .main-section .text .title {
+    font-size: 2.1rem;
+  }
+  .main-section .text .desc{
+    width: 100%;
+  }
+  .main-section .text .btns a{
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .main-section .container{
+    height: unset;
+  }
+  .main-section .text .features-free-trial small{
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
