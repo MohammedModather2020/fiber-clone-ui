@@ -1,5 +1,8 @@
 $(function () {
   'use strict';
+  // move to top postilion after reload page
+  $('html , body').animate({ scrollTop: 0 }, 100);
+  // ------------------------------------------------------------------------->
   // Slide menu
   (function () {
     var $body = document.body,
@@ -66,6 +69,9 @@ $(function () {
         $(this).remove();
       });
   });
+  // ------------------------------------------------------------------------->
+  // trigger aos animate
+  AOS.init();
   // ------------------------------------------------------------------------->
   // trigger swiper scroll
   new Swiper('.mySwiper', {
