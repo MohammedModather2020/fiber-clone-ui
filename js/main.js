@@ -56,6 +56,16 @@ $(function () {
     );
     $(this).parent().addClass('active').siblings().removeClass('active');
   });
+  // -------------------------------------------------------------------------->
+  // Show Loading
+  $('.loading-overlay .spinner').fadeOut(400, function () {
+    $('body').css('overflow', 'hidden');
+    $(this)
+      .parent()
+      .fadeOut(400, function () {
+        $(this).remove();
+      });
+  });
   // ------------------------------------------------------------------------->
   // trigger swiper scroll
   new Swiper('.mySwiper', {
@@ -73,13 +83,13 @@ $(function () {
       },
       480: {
         slidesPerView: 1,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       640: {
         slidesPerView: 3,
-        spaceBetween: 40
-      }
-    }
+        spaceBetween: 40,
+      },
+    },
   });
   // ------------------------------------------------------------------------->
   // trigger swiper scroll sing up
